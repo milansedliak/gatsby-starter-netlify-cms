@@ -18,12 +18,22 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      
+  - name: "fag"
+    label: "FAQ"
+    folder: "src/pages/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
     label: "Pages"
-    create: true
-    folder: "src/pages"
-    slug: "{{name}}"
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
