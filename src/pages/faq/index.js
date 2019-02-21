@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
 
 export default class FaqIndexPage extends React.Component {
   render() {
@@ -23,11 +22,10 @@ export default class FaqIndexPage extends React.Component {
                     padding: '1rem',
                   }}
                 >
-                  Latest Stories
+                  FAQSSSS
                 </h1>
               </div>
             </div>
-              <BlogRoll />
             </div>
         </section>
       </Layout>
